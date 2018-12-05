@@ -1,0 +1,18 @@
+server:
+  port: 8090
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    platform: postgres
+    #url: jdbc:postgresql://10.11.23.224,10.11.23.225/4db76693c45349ffdc96dc4b0b0b83fe
+    #username: b4193efdc5b80121a43774770e82adf5
+    #password: 9afb38c6c1db5e8eb914741fbfcaee20
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+  batch:
+    job:
+      enabled: false   
+    #spring.batch.job.enabled=false
